@@ -1,0 +1,16 @@
+version: '3'
+
+services:
+  camel-example-1:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    volumes:
+    - ./camel-example-a:/root/workspace
+
+  camel-example-2:
+    build: 
+      context: .
+      dockerfile: Dockerfile
+    volumes:
+    - ./camel-example-b:/root/workspace
